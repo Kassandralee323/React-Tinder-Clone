@@ -1,16 +1,18 @@
 import React from "react";
-
+import {BiWorld} from 'react-icons/bi';
+import {SiTinder} from 'react-icons/si';
+import './Navbar.scss';
 const Navbar = () => {
   return (
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-          <img src="https://tinder.com/static/android-chrome-192x192.png" alt="" width="30" height="24" class="d-inline-block align-text-top" />
-            tinder
+      <nav className="navbar navbar-expand-lg">
+        <div className="container-fluid">
+          <a className="navbar-brand d-flex align-items-center" href="#">
+            <SiTinder className="d-inline-block brand-logo" />
+            <span>tinder</span>
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarTogglerDemo02"
@@ -18,44 +20,45 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item ms-3 me-4">
+                <a className="nav-link" href="#">
                   Products
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item me-4">
+                <a className="nav-link" href="#">
                   Learn
                 </a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item me-4">
                 <a
-                  class="nav-link"
+                  className="nav-link"
                   href="#"
                 >
                   Safety
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item me-4">
+                <a className="nav-link" href="#">
                   Support
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
+              <li className="nav-item me-4">
+                <a className="nav-link" href="#">
                   Swipe Night
                 </a>
               </li>
             </ul>
-            <div>
-                <button class="btn btn-outline-success">
-                ENGLISH
+            <div className="d-flex ">
+                <button className="btn nav-lang d-flex align-items-center">
+                    <BiWorld />
+                    <span className="ms-2">ENGLISH</span> 
                 </button>
-                <button class="btn btn-outline-success ms-4">
+                <button className="btn nav-login ms-4">
                 Log in
                 </button>
             </div>
