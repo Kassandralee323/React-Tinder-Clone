@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 
-@font-face{
+/* @font-face{
   font-family: "Chalet New York Nineteen Sixty";
   src: url("./fonts/ChaletNewYorkNineteenSeventy.ttf") format("truetype");
-}
+} */
 
 body {
   margin: 0;
@@ -17,7 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-color: black; */
   background-image: url('./images/tinder2.jpg');
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
 }
 

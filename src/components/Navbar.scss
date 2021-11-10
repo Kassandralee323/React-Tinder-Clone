@@ -17,7 +17,7 @@
     &:hover{
         color: #e24c6d !important;
         text-decoration: underline;
-        transition: text-decoration 0s ease;
+        transition: text-decoration 0s ease-in-out;
     }
 }
 

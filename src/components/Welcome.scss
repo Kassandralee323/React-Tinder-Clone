@@ -1,0 +1,25 @@
+section.container-fluid{
+   height:100vh;
+}
+
+.wrapper{
+   color:white;
+   display: flex;
+}
+
+.wrapper__title{
+   font-size: 6rem;
+   font-weight: 700;
+}
+
+.wrapper__create_account{
+   color:white;
+   text-transform: uppercase;
+   background-image: linear-gradient(to right,rgba(253,48,110,255),rgba(254,83,69,255));
+   // margin:1rem 12rem 0 12rem;
+   padding:1rem 0;
+   &:hover{
+      color:white;
+      background-image: linear-gradient(to right,rgba(254,83,69,255),rgba(253,48,110,255));
+   }
+}
