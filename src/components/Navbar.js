@@ -1,6 +1,7 @@
 import React from "react";
 import {BiWorld} from 'react-icons/bi';
 import {SiTinder} from 'react-icons/si';
+import {BiMenu} from 'react-icons/bi';
 import './Navbar.scss';
 const Navbar = () => {
   return (
@@ -20,11 +21,12 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            {/* <span className="navbar-toggler-icon"></span> */}
+            <BiMenu className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item ms-3 me-4">
+            <ul className="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
+              <li className="nav-item me-4">
                 <a className="nav-link" href="#">
                   Products
                 </a>
