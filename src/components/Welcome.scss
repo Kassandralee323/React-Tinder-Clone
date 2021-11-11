@@ -1,12 +1,22 @@
 section.container-fluid{
    height:100vh;
+   position: relative;
 }
 
 .wrapper{
    color:white;
 }
 
+.welcome{
+   margin:0 auto;
+}
+
 .wrapper__title{
+   margin:0 0 2rem 0;
+   color:white;
+}
+
+.wrapper__text{
    font-size: 6.5rem;
    font-weight: 650;
 }
@@ -16,17 +26,84 @@ section.container-fluid{
    font-weight: 400;
 }
 
-.wrapper__create_account{
-   color:white;
+.wrapper .btn{
    text-transform: uppercase;
-   background-image: linear-gradient(to right,rgba(253,48,110,255),rgba(254,83,69,255));
-   margin:1rem 11.5rem 0 11.5rem;
    border-radius: 2rem;
-   font-size: 1.05rem;
+   font-size: 1rem;
    font-weight: 500;
-   padding:.9rem 0;
+   padding:.9em 3.5em;
+   margin-top: 1em;
    &:hover{
       color:white;
+   }
+}
+
+.wrapper__gplay{
+   width:50%;
+}
+
+.img-container{
+   margin:2rem 0;
+}
+
+.wrapper__create_account{
+   color:white;
+   background-image: linear-gradient(to right,rgba(253,48,110,255),rgba(254,83,69,255));
+   &:hover{
       background-image: linear-gradient(to right,rgba(254,83,69,255),rgba(253,48,110,255));
+   }
+}
+
+.wrapper__login{
+   background-color: transparent;
+   color:white;
+   border: 2px solid white;
+}
+
+.wrapper_note{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   position:absolute;
+   font-size: .75rem;
+   color:#7f95ab;
+   background-color: black;
+   bottom:0;
+   left:0;
+}
+
+@media only screen and (max-width:600px){
+   .wrapper__text{
+      font-size:2.5rem;
+   }  
+
+   .wrapper__create_account{
+      background-image:none;
+      background-color: white;
+      color:black;
+   }
+
+   .wrapper__title{
+      margin:7rem 0 5rem 0;
+   }
+
+   .wrapper__reg{
+      font-size: 1.8rem;
+   } 
+
+   .wrapper .btn{
+      width:100%;
+   }
+}
+
+@media only screen and (max-width:340px){
+   .wrapper__text{
+      font-size:2rem;
+   }  
+   .wrapper__reg{
+      font-size: 1.2rem;
+   } 
+   .wrapper__create_account{
+      font-size: .8rem;
    }
 }

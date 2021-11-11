@@ -3,13 +3,24 @@ import './Welcome.scss';
 
 const Welcome = () => {
     return (
-        <section className="container-fluid d-flex align-items-center justify-content-center">
-            <div className="wrapper d-flex flex-column">
-                <div className="d-flex align-items-start">
-                    <h1 className="wrapper__title">Swipe Right</h1>
+        <section className="welcome container-fluid row d-flex align-items-center">
+            <div className="wrapper col-md-12 col-sm-12 text-center">
+                <div className="wrapper__title d-flex align-items-start justify-content-center">
+                    <h1 className="wrapper__text">Swipe Right</h1>
                     <span className="wrapper__reg">&reg;</span>
                 </div>
-                <button className="btn wrapper__create_account">Create Account</button>
+                <div>
+                    <button className="btn wrapper__create_account">Create Account</button>
+                </div>
+                <div>
+                    <button className="btn wrapper__login d-md-none">Log in</button>
+                </div>
+                <div className="img-container d-md-none">
+                    <img className="wrapper__gplay" src="/g-play.png" alt="" />
+                </div>
+                <div className="wrapper_note">
+                    All photos are of models and used for illustrative purposes only
+                </div>
             </div>
         </section>
     )
