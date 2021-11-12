@@ -4,7 +4,7 @@ import './Welcome.scss';
 const Welcome = () => {
     return (
         <section className="welcome container-fluid row d-flex align-items-center">
-            <div className="wrapper col-md-12 col-sm-12 text-center">
+            <div className="wrapper col-md-12 col-xs-12 text-center">
                 <div className="wrapper__title d-flex align-items-start justify-content-center">
                     <h1 className="wrapper__text">Swipe Right</h1>
                     <span className="wrapper__reg">&reg;</span>
