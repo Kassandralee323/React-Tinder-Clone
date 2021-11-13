@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-            <div className="navbar__header">
+          <div className="navbar__header">
                 <div className="navbar-brand d-flex align-items-center">
                   <SiTinder className="d-inline-block brand-logo" />
                   <span>tinder</span>
@@ -48,7 +48,7 @@ const Navbar = () => {
                     <BiWorld />
                     <span className="ms-2">ENGLISH</span> 
                 </button>
-                <button className="btn nav-login ms-4">
+                <button className="btn nav-login ms-0">
                 Log in
                 </button>
               </div>
