@@ -1,32 +1,7 @@
-.navbar{
-    position:fixed;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,1), rgba(255,255,255,0));
-    padding:0 1rem;
-}
-
 .navbar-brand{
     color:white !important;
     font-size:2.8rem;
     font-weight: 630;
-}
-
-.navbar-toggler-icon{
-    color:white;
-}
-
-.navbar-toggler{
-    outline-color: red !important;
-}
-
-.navbar-nav .nav-item .nav-link{
-    color:white !important;
-    font-size:1.25rem;
-    &:hover{
-        color: #e24c6d !important;
-        text-decoration: underline;
-        transition: text-decoration 0s ease-in-out;
-    }
 }
 
 .brand-logo{
@@ -53,11 +28,104 @@
     }
 }
 
+.navbar{
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(255,255,255,0));
+    color:white;
+    justify-content: space-between;
+    width: 100%;
+    position:fixed;
+    padding:0 1.8rem;
+}
+
+.items{
+    display: flex;
+}
+
+.item{
+    margin-right: 2.8rem;
+    color:white !important;
+    font-size:1.25rem;
+    &:hover{
+        color: #e24c6d !important;
+        text-decoration: underline;
+        transition: text-decoration 0s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.icon{
+    display: none;
+}
+
+.navbar__header{
+    display: flex;
+    background-color: steelblue;
+    width: 15.5%;
+    justify-content: start;
+}
+
+.navbar__right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: mediumslateblue;
+    width: 84.5%;
+    position:relative;
+}
+
 @media only screen and (max-width:600px){
     .brand-logo{
         height: 28px;
     }
+    
     .navbar-brand{
         font-size:1.9rem;
+    }
+
+    .items{
+        display: none; 
+        padding:0 .5rem;
+        // background-color: red;
+    }
+
+    .active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        // height:100vh;
+        width:100%;
+        background-color: yellow;
+    }
+
+    .item{
+        padding: .5rem .7rem;
+        margin:0 auto 1rem auto;
+        font-size: 1.2rem;
+        background-color: #f0f2f4;
+        color:black !important;
+        width:100%;
+    }
+
+    .navbar__header{
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        padding:0 1.8rem;
+    }
+
+    .icon{
+        display: flex;
+    }
+
+    .navbar{
+        flex-direction: column;
+        padding:0;
+    }
+
+    .navbar__right{
+        flex-direction: column;
+        width:100%;
     }
 }

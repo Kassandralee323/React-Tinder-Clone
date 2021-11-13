@@ -1,12 +1,62 @@
-import React from "react";
-import {BiWorld} from 'react-icons/bi';
+import React,{useState} from "react";
+import {BiWorld,BiMenu} from 'react-icons/bi';
 import {SiTinder} from 'react-icons/si';
-import {BiMenu} from 'react-icons/bi';
+import {FaTimes} from 'react-icons/fa';
+import {GiHamburgerMenu} from 'react-icons/gi';
+import { navbarItems } from "../items";
+
 import './Navbar.scss';
+
 const Navbar = () => {
+  const [toggleIcon, setToggleIcon] = useState(true)
   return (
     <header>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar">
+            <div className="navbar__header">
+                <div className="navbar-brand d-flex align-items-center">
+                  <SiTinder className="d-inline-block brand-logo" />
+                  <span>tinder</span>
+                </div>
+
+                <div className="icon">
+                    {toggleIcon ? <GiHamburgerMenu onClick={()=>setToggleIcon(!toggleIcon)} /> : <FaTimes onClick={()=>setToggleIcon(!toggleIcon)} /> } 
+                </div>
+            </div>
+             
+            {toggleIcon ?( 
+            <div className="navbar__right">
+              <div className="items">
+                  {navbarItems.map((item,index)=><div key={index} className="item">{item.title}</div>)}
+              </div> 
+              <div className="items">
+                <button className="btn nav-lang d-flex align-items-center">
+                    <BiWorld />
+                    <span className="ms-2">ENGLISH</span> 
+                </button>
+                <button className="btn nav-login ms-4">
+                Log in
+                </button>
+              </div>
+            </div>)
+            : 
+            <div className="navbar__right">
+              <div className="items active">
+                  {navbarItems.map((item,index)=><div key={index} className="item">{item.title}</div>)}
+              </div> 
+              <div className="right_items">
+                <button className="btn nav-lang d-flex align-items-center">
+                    <BiWorld />
+                    <span className="ms-2">ENGLISH</span> 
+                </button>
+                <button className="btn nav-login ms-4">
+                Log in
+                </button>
+              </div>
+            </div>}
+           
+        </nav>
+
+      {/* <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <a className="navbar-brand d-flex align-items-center" href="#">
             <SiTinder className="d-inline-block brand-logo" />
@@ -21,7 +71,7 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            {/* <span className="navbar-toggler-icon"></span> */}
+          
             <BiMenu className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -66,7 +116,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </header>
   );
 };
