@@ -77,7 +77,7 @@
 .right_items{
     display: flex;
     // align-items: flex-start;
-    background-color: pink;
+    // background-color: pink;
 }
 
 @media only screen and (max-width:600px){
@@ -108,7 +108,8 @@
     .item{
         padding: .5rem .7rem;
         margin:0 auto 1rem auto;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        font-weight: 500;
         background-color: #f0f2f4;
         color:black !important;
         width:100%;
@@ -141,7 +142,7 @@
     }
 
     .right_items{
-        margin-top:4.5rem;
+        margin-top:5.5rem;
         display: flex;
         background-color: white;
         width: 80%;
@@ -167,5 +168,11 @@
         color:black !important;
         display: flex;
         align-self: center;
+    }
+}
+
+@media only screen and (max-width:335px){
+    .right_items{
+        margin-top: 4.5rem;
     }
 }
