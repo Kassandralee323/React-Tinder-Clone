@@ -73,6 +73,35 @@ section.container-fluid{
    z-index: 9999;
 }
 
+@media only screen and (max-width:992px){
+
+   .wrapper__gplay{
+      width:22%;
+   }
+
+   .wrapper__text{
+      font-size:5.5rem;
+   }  
+
+   .wrapper__create_account{
+      background-image:none;
+      background-color: white;
+      color:black;
+   }
+
+   .wrapper__title{
+      margin:6rem 0 5rem 0;
+   }
+
+   .wrapper__reg{
+      font-size: 4rem;
+   } 
+
+   .wrapper .btn{
+      width:100%;
+   }
+}
+
 @media only screen and (max-width:600px){
    .wrapper__text{
       font-size:2.5rem;
@@ -95,10 +124,6 @@ section.container-fluid{
    .wrapper .btn{
       width:100%;
    }
-
-   // .wrapper_note{
-   //    z-index: -1;
-   // }
 }
 
 @media only screen and (max-width:340px){

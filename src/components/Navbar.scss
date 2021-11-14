@@ -6,7 +6,7 @@
 
 .brand-logo{
     height: 38px;
-    width: 100%;
+    width: 38px;
 }
 
 .nav-lang{
@@ -57,11 +57,12 @@
 
 .icon{
     display: none;
+    cursor: pointer;
 }
 
 .navbar__header{
     display: flex;
-    // background-color: steelblue;
+    background-color: steelblue;
     width: 15.5%;
     justify-content: start;
 }
@@ -70,7 +71,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color: mediumslateblue;
+    background-color: mediumslateblue;
     width: 84.5%;
     position:relative;
     // background-color: transparent !important;
@@ -79,10 +80,10 @@
 .right_items{
     display: flex;
     // align-items: flex-start;
-    background-color: pink;
+    // background-color: pink;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:992px){
     
     .navbar__right--active{
         background-color: white !important;
