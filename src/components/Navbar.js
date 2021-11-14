@@ -52,9 +52,9 @@ const Navbar = () => {
             <div className="items">
               <button className="btn nav-lang d-flex align-items-center">
                 <BiWorld />
-                <span className="ms-2">ENGLISH</span>
+                <span className="ms-2">English</span>
               </button>
-              <button className="btn nav-login">Log in</button>
+              <button className="btn nav-login ms-4">Log in</button>
             </div>
           </div>
         ) : (
@@ -69,7 +69,7 @@ const Navbar = () => {
             <div className="right_items">
               <button className="btn nav-lang d-flex align-items-center">
                 <BiWorld />
-                <span className="ms-2">ENGLISH</span>
+                <span className="ms-2">English</span>
               </button>
               <button className="btn nav-login ms-0">Log in</button>
             </div>
