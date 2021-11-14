@@ -4,11 +4,24 @@ import { SiTinder } from "react-icons/si";
 import { FaTimes } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { navbarItems } from "../items";
-
 import "./Navbar.scss";
+import { useGlobalContext } from "../context";
 
 const Navbar = () => {
+  const {ShowNote} = useGlobalContext();
+
   const [toggleIcon, setToggleIcon] = useState(true);
+
+  const showNav =()=>{
+    setToggleIcon(!toggleIcon)
+    ShowNote(false)
+  }
+
+  const hideNav=()=>{
+    setToggleIcon(!toggleIcon)
+    ShowNote(true)
+  }
+
   return (
     <header>
       <nav className="navbar">
@@ -20,9 +33,9 @@ const Navbar = () => {
 
           <div className="icon">
             {toggleIcon ? (
-              <GiHamburgerMenu onClick={() => setToggleIcon(!toggleIcon)} />
+              <GiHamburgerMenu onClick={showNav} />
             ) : (
-              <FaTimes onClick={() => setToggleIcon(!toggleIcon)} />
+              <FaTimes onClick={hideNav} />
             )}
           </div>
         </div>

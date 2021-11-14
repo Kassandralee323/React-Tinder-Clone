@@ -1,7 +1,9 @@
 import React from 'react'
 import './Welcome.scss';
-
+import { useGlobalContext } from "../context";
 const Welcome = () => {
+    const {noteClass} = useGlobalContext()
+
     return (
         <section className="welcome container-fluid row d-flex align-items-center">
             <div className="wrapper col-md-12 col-xs-12 text-center">
@@ -18,9 +20,9 @@ const Welcome = () => {
                 <div className="img-container d-md-none">
                     <img className="wrapper__gplay" src="/g-play.png" alt="" />
                 </div>
-                <div className="wrapper_note">
+                {noteClass && <div className="wrapper_note">
                     All photos are of models and used for illustrative purposes only
-                </div>
+                </div>}
             </div>
         </section>
     )
