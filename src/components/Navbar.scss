@@ -62,17 +62,18 @@
 
 .navbar__header{
     display: flex;
-    background-color: steelblue;
-    width: 15.5%;
+    // background-color: steelblue;
+    width: 18%;
     justify-content: start;
 }
 
 .navbar__right{
+    // padding-left: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: mediumslateblue;
-    width: 84.5%;
+    // background-color: mediumslateblue;
+    width: 82%;
     position:relative;
     // background-color: transparent !important;
 }
