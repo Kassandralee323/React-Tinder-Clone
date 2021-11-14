@@ -70,6 +70,7 @@ section.container-fluid{
    bottom:0;
    left:0;
    padding:0.2rem 0;
+   z-index: 9999;
 }
 
 @media only screen and (max-width:600px){
@@ -93,6 +94,10 @@ section.container-fluid{
 
    .wrapper .btn{
       width:100%;
+   }
+
+   .wrapper_note{
+      z-index: -1;
    }
 }
 
